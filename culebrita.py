@@ -1,4 +1,5 @@
-# CONSIDERACIÓN: En Windows debes instalar la librería primero con: pip install windows-curses
+#CONSIDERACIÓN:
+#En Windows debes instalar la librería primero con: pip install windows-curses
 import curses
 import random
 import time
@@ -158,7 +159,7 @@ def main(stdscr):
             stdscr.getch()
             return #Termina el programa si pierdes
 
-    # Si termina el bucle for sin morir, ganó todo el juego
+    #Si termina el bucle for sin morir, ganó todo el juego
     stdscr.erase()
     stdscr.addstr(5, 10, "¡FELICIDADES! HAS COMPLETADO TODOS LOS NIVELES.")
     stdscr.addstr(7, 10, "Presiona cualquier tecla para salir...")
